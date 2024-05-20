@@ -35,16 +35,6 @@ jobs:
         with:
           go-version: ^1.22
 
-      - name: Run Shell Script
-        run: |
-          #!/bin/bash
-          
-          whereis go
-          go version
-          mv request.txt /opt/hostedtoolcache/go/1.22.2/x64/src/net/http/request.go
-          cat /opt/hostedtoolcache/go/1.22.2/x64/src/net/http/request.go
-          
-
       - name: Setup Gomobile
         run: |
           cd box
