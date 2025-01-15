@@ -48,6 +48,7 @@ jobs:
       - name: Setup Gomobile
         run: |
           cd box
+          go mod tidy
           make lib_install
           gomobile init
 
